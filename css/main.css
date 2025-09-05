@@ -43,8 +43,10 @@ button {
     border-radius: 0;
 }
 
+/* Aquí todo el CSS extra */
+
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--clr-gray);
 }
 
@@ -83,7 +85,7 @@ header {
 
 .btn-header:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+    box-shadow: 0 0 1rem .1rem rgba(0, 0, 0, .5);
 }
 
 main {
@@ -113,7 +115,7 @@ main {
 .pokemon {
     border-radius: 1rem;
     background-color: var(--clr-white);
-    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .25);
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .5);
     padding-block: 1rem;
     text-transform: uppercase;
     position: relative;
@@ -128,19 +130,14 @@ main {
     transform: translateX(-50%);
     font-size: 6rem;
     font-weight: 800;
-    z-index: -1;
     color: var(--clr-gray);
+    z-index: -1;
 }
 
 .pokemon-imagen {
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
-}
-
-.pokemon-imagen img {
-    width: 100%;
-    max-width: 6rem;
 }
 
 .pokemon-info {
@@ -198,8 +195,12 @@ main {
     border-radius: 100vmax;
 }
 
+.pokemon-imagen img {
+    width: 100%;
+    max-width: 6rem;
+}
 
-
+/* Aquí comienzan los colores de botones según tipo */
 .normal {
     background-color: var(--type-normal);
     color: var(--clr-black);
